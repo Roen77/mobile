@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="clear">
+        <div class="left_menu">
+            <h1 class="logo"><a href="#"><span class="ir_su">네이버</span></a><a href="#" class="tit">카페</a></h1>
+        </div>
+        <div class="right_menu">
+            <a href="#">카페만들기</a>
+            <a href="#" class="search"><span class="ir_su">검색</span></a>
+        </div>
+    </header>
+    <!-- 헤더 -->
+    <nav>
+        <ul class="gnb">
+            <li><a href="#" class="on">홈</a></li>
+            <li><a href="#">탐색</a></li>
+            <li><a href="#">내카페</a></li>
+            <li><a href="#">내소식</a></li>
+        </ul>
+    </nav>
+    <!-- nav -->
+    <section class="banner">
+        <h2 class="ir_su">배너</h2>
+        <a href="#"><img src="img/banner.jpg" alt="배너"></a>
+    </section>
+    <section class="main">
+        <a href="#">
+            <div class="txt">
+                <strong>네이버 메인에 <span>#카페</span>추가하기</strong>
+                <p>이 페이지를 네이버 메인에서 바로 보세요!</p>
+            </div>
+        </a>
+    </section>
+    <!-- main -->
+    <section class="my_cafe">
+        <h2><a href="#">내 가입카페</a></h2>
+        <div class="con">
+            <div class="inner_txt">
+                <p>로그인 후<br>가입카페를 둘러보세요</p>
+                <a href="#" class="btn">로그인</a>
+            </div>
+        </div>
+    </section>
+    <!-- my_cate -->
+    <section class="cafe_list">
+        <ul>
+            <li><a href="#">
+                <h3>네이버 대표카페</h3>
+                <p>활발하고 알찬 콘텐츠가 돋보이는 네이버 대표카페</p>
+            </a></li>
+            <li><a href="#">
+                <h3>네이버 대표카페</h3>
+                <p>활발하고 알찬 콘텐츠가 돋보이는 네이버 대표카페</p>
+            </a></li>
+            <li><a href="#">
+                <h3>네이버 대표카페</h3>
+                <p>활발하고 알찬 콘텐츠가 돋보이는 네이버 대표카페</p>
+            </a></li>
+            <li><a href="#">
+                <h3>네이버 대표카페</h3>
+                <p>활발하고 알찬 콘텐츠가 돋보이는 네이버 대표카페</p>
+            </a></li>
+        </ul>
+    </section>
+    <section class="naver_btn">
+        <a href="#">네이버 메인에 <em>#카페</em> 추가</a>
+    </section>
+    <footer>
+        <div class="inner">
+            <div class="f_top">
+                <a href="#">맨위로</a>
+            </div>
+            <div class="f_bottom">
+                <ul class="fnb">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">PC버전</a></li>
+                    <li><a href="#">전체서비스</a></li>
+                </ul>
+                <div class="copy">
+                    <a href="#">카페 고객센터</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">오류신고</a>
+                </div>
+                <p>&copy;NAVER Corp</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const navtab=document.querySelectorAll('.gnb li a');
+        for(let i = 0; i<navtab.length; i++){
+         
+          navtab[i].addEventListener('click',function(){
+                for(let j =0; j<navtab.length; j++){
+                    navtab[j].classList.remove('on');
+                }
+            this.classList.add('on');
+          })
+
+        }
+    </script>
+</body>
+</html>

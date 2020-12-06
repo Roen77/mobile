@@ -1,0 +1,316 @@
+/* header */
+header{
+    height: 41px;
+    line-height: 41px;
+    background-color: #00c73c;
+}
+header .left_menu{
+    float: left;
+    height: 100%;
+    background: url(../img/logo.jpg) no-repeat left top;
+    background-size: 41px auto;
+
+}
+header .left_menu .tit{
+    padding: 0 0 0 50px;
+    color:#fff;
+    font-size: 17px;
+    display: block;
+}
+
+
+header .right_menu{
+    height: 100%;
+    float: right;
+
+}
+header .right_menu a{
+    font-size: 9px;
+    color:#fff;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+header .right_menu a.search{
+    background: url(../img/search.jpg) no-repeat center;
+    background-size: 15px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 15px 0 0;
+    border: 0;
+
+}
+nav{
+    padding: 0 10px;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #fff;
+}
+nav ul.gnb{
+    text-align:justify;
+    text-align-last: justify;
+}
+nav ul.gnb li{
+    display: inline-block;
+}
+nav ul.gnb li a{
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 5px;
+    position: relative;
+}
+nav ul.gnb li a.on::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #00bf22;
+    left:0;
+    bottom: -2px;
+}
+.banner{
+    box-sizing: border-box;
+    border: 1px solid #e6ede3;
+    border-left:0;
+    border-right:0;
+    padding: 12.5px;
+}
+.banner a{
+    display: block;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.main{}
+.main a{
+    display: block;
+    padding: 0 42px 0 42px;
+    border-top: 1px solid #eaf1e7;
+    border-bottom: 1px solid #eaf1e7;
+    background-color: #f5fbf4;
+}
+.main a .txt{
+    padding: 12.5px 0 12.5px 44px;
+    line-height: 100%;
+    background: url(../img/arrow.jpg) no-repeat right center;
+    background-size: 8px auto;
+    position: relative;
+}
+.main a .txt::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+    background:#00c73c url(../img/house.jpg) no-repeat left 50% center;
+    background-size: 19px auto;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+
+}
+.main a .txt strong{
+    font-size: 11.5px;
+}
+.main a .txt strong span{
+    color:#00c126;
+}
+.main a .txt p{
+    font-size: 10px;
+    color:#888887;
+    margin-top: 6px;;
+}
+.my_cafe{
+    padding: 26px 12.5px 0;
+}
+.my_cafe h2{
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+
+}
+.my_cafe h2 a{
+    display: block;
+    font-size: 15px;
+    position: relative;
+}
+.my_cafe h2 a::after{
+    content: '';
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    background: url(../img/arrow2.jpg) no-repeat center;
+    background-size: 6.5px auto;
+    width: 6.5px;
+    height: 11.5px;
+    margin-left: 7.5px;
+}
+.my_cafe .con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+    text-align: center;
+
+}
+.my_cafe .con p{
+    font-size: 12px;
+    color:#565656;
+    margin-bottom: 20px;
+}
+.my_cafe .con a{
+    background-color: #00c73c;
+    display: flex;
+    width: 145px;
+    height: 37.5px;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size: 11px;
+}
+.cafe_list{
+    border-top: 5px solid #f7f7f7;
+}
+.cafe_list ul{
+    padding: 0 12.5px;
+}
+.cafe_list ul li{
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 67px;
+}
+.cafe_list ul li h3{
+    font-size: 14px;
+    background-size: auto 16px;
+
+}
+.cafe_list ul li:nth-child(1) h3::before{
+    content: '';
+    display: inline-block;
+    background: url(../img/list1.jpg) no-repeat left center;
+    background-size: auto 16px;
+    width: 17px;
+    height: 16px;
+    margin-right: 5px;
+}
+.cafe_list ul li:nth-child(2) h3::before{
+    content: '';
+    display: inline-block;
+    background: url(../img/list2.jpg) no-repeat left center;
+    background-size: auto 16px;
+    width: 17px;
+    height: 16px;
+    margin-right: 5px;
+}
+.cafe_list ul li:nth-child(3) h3::before{
+    content: '';
+    display: inline-block;
+    background: url(../img/list3.jpg) no-repeat left center;
+    background-size: auto 16px;
+    width: 17px;
+    height: 16px;
+    margin-right: 5px;
+}
+.cafe_list ul li:nth-child(4) h3::before{
+    content: '';
+    display: inline-block;
+    background: url(../img/lisy4.jpg) no-repeat left center;
+    background-size: auto 16px;
+    width: 17px;
+    height: 16px;
+    margin-right: 5px;
+}
+.cafe_list ul li p{
+    font-size: 7.5px;
+    color:#a3a3a3;
+}
+.cafe_list ul li:last-child{
+    border-bottom:0;
+}
+.naver_btn{
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    box-sizing: border-box;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+}
+.naver_btn a{
+    display: block;
+    text-align: center;
+    line-height: 36px;;
+    width: 188px;
+    height: 36px;
+    color:#fff; 
+    background:#00c73c;
+    font-size: 11px;
+    position: relative;
+    padding-left: 34px;
+    box-sizing: border-box;
+    border: 1px solid #00af26;
+}
+.naver_btn a::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    background:#00c73c url(../img/ar.jpg) no-repeat left center;
+    background-size: 34px;
+    width: 34px;
+    height: 35px;
+    box-sizing: border-box;
+    border-right: 1px solid #00af26;
+}
+footer{
+    text-align: center;
+}
+footer .inner{
+    width: 220px;
+    margin: 0 auto;
+    padding: 19px 0;
+}
+footer .inner .f_top{
+    padding-bottom: 38px;
+}
+footer .inner .f_bottom li{
+    display: inline-block;
+    font-size: 0;
+}
+footer .inner .f_bottom li a{
+    display: block;
+    font-size: 9px;
+    height: 22.5px;
+    line-height: 22.5px;
+    padding: 0 5px;
+    border: 1px solid #b2b2b2;
+}
+footer .inner .f_bottom .copy{
+    padding: 9px 0;
+    font-size: 0;
+}
+footer .inner .f_bottom .copy a{
+    font-size: 10px;
+    position: relative;
+    padding: 0 6px;
+}
+footer .inner .f_bottom .copy a::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background-color: #eee;
+    top:3px;
+    right: 0;
+    
+}
+footer .inner .f_bottom .copy a:last-child::after{
+    display: none;
+}
